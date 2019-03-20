@@ -1,0 +1,6 @@
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessEntity\bin\Debug\BusinessEntity.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessEntity\bin\Debug\BusinessEntity.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessEntity\obj\Debug\BusinessEntity.csprojAssemblyReference.cache
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessEntity\obj\Debug\BusinessEntity.csproj.CoreCompileInputs.cache
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessEntity\obj\Debug\BusinessEntity.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessEntity\obj\Debug\BusinessEntity.pdb

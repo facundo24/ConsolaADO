@@ -1,0 +1,11 @@
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\bin\Debug\BusinessEntity.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\bin\Debug\DataAccess.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\bin\Debug\BusinessEntity.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\obj\Debug\BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\obj\Debug\BusinessLogic.csproj.CopyComplete
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\BusinessLogic\obj\Debug\BusinessLogic.pdb

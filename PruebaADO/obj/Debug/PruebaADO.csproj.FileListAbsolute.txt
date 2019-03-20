@@ -1,0 +1,14 @@
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\PruebaADO.exe.config
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\PruebaADO.exe
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\PruebaADO.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\DataAccess.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\DataAccess.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\obj\Debug\PruebaADO.csprojAssemblyReference.cache
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\obj\Debug\PruebaADO.csproj.CoreCompileInputs.cache
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\obj\Debug\PruebaADO.csproj.CopyComplete
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\obj\Debug\PruebaADO.exe
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\obj\Debug\PruebaADO.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\BusinessEntity.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\BusinessLogic.dll
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\BusinessEntity.pdb
+C:\Users\Facundo\Desktop\CEI\PROGRAMACIÓN 3\Programas\PruebaADO\PruebaADO\bin\Debug\BusinessLogic.pdb

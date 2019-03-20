@@ -34,7 +34,14 @@ namespace BusinessLogic.Helper
             return pa.getCountAlumnos(connString);
         }
 
+        public int UpdateAlumno(string connString, Alumno alumnoUpdate)
+        {
+            PAlumno pa = new PAlumno();
+            return pa.UpdateAlumno(connString, alumnoUpdate);
+        }
 
-        
+
+
+
     }
 }

@@ -157,5 +157,38 @@ namespace DataAccess
 
             return cantidad;
         }
+
+        public int UpdateAlumno(string connString, Alumno alumno)
+        {
+            int rowAfect = 0;
+            try
+            {
+                SqlConnection context = new SqlConnection(connString);
+                using (context)
+                {
+                    context.Open();
+
+                    SqlCommand cm = new SqlCommand();
+                    cm.Connection = context;
+                    cm.CommandText = "UPDATE Alumno SET nombre = @nom, apellido = @ap, edad = @edad, documento = @doc where idAlumno = @id";
+
+                    cm.Parameters.Add("@id", SqlDbType.Int).Value = alumno.IdAlumno;
+                    cm.Parameters.Add("@nom", SqlDbType.VarChar).Value = alumno.Nombre;
+                    cm.Parameters.Add("@ap", SqlDbType.VarChar).Value = alumno.Apellido;
+                    cm.Parameters.Add("@edad", SqlDbType.SmallInt).Value = alumno.Edad;
+                    cm.Parameters.Add("@doc", SqlDbType.VarChar).Value = alumno.Documento;
+
+                    rowAfect = cm.ExecuteNonQuery();                  
+
+                }
+            }
+            catch (Exception ex)
+            {
+                return rowAfect;
+            }
+
+            return rowAfect;
+        }
+
     }
 }

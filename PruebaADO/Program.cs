@@ -23,6 +23,8 @@ namespace PruebaADO
 
             int count = ha.GetCountAlumnos(connection);
 
+            Alumno alUpdate = new Alumno(1,"Pepe4", "Loco2", "1001000", 99);
+            ha.UpdateAlumno(connection, alUpdate);
 
         }
     }

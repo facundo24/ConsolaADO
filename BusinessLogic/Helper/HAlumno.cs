@@ -21,5 +21,11 @@ namespace BusinessLogic.Helper
             PAlumno pa = new PAlumno();
             return pa.GetAlumnos(connString);
         }
+
+        public Alumno GetAlumnoByDocument(string connString, string documento)
+        {
+            PAlumno pa = new PAlumno();
+            return pa.GetAlumnoByDocument(connString, documento);
+        }
     }
 }

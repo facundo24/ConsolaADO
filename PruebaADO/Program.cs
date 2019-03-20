@@ -21,6 +21,7 @@ namespace PruebaADO
 
             List<Alumno> colAlumnos = ha.GetAlumnos(connection);
 
+            Alumno unAlumno = ha.GetAlumnoByDocument(connection, "00000000");
 
 
         }

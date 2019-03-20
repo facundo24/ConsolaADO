@@ -97,5 +97,40 @@ namespace DataAccess
 
             return colAlumnos;
         }
+
+        public Alumno GetAlumnoByDocument(string connString, string documento)
+        {
+            Alumno alumno = null;
+            try
+            {
+
+                SqlConnection context = new SqlConnection(connString);
+                using (context)
+                {
+                    context.Open();
+
+                    SqlCommand cm = new SqlCommand();
+                    cm.Connection = context;
+                    cm.CommandText = "Select idAlumno, nombre, apellido, documento, edad from Alumno where documento = @doc";
+ 
+                    cm.Parameters.Add("@doc", SqlDbType.VarChar).Value = documento;
+
+                    SqlDataReader re = cm.ExecuteReader(CommandBehavior.SingleRow);
+                    if (re.HasRows)
+                    {
+                        while (re.Read())
+                        {
+                            alumno = new Alumno(re.GetInt32(0), re.GetString(1), re.GetString(2), re.GetString(3), re.GetInt16(4));
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+            return alumno;
+        }
     }
 }

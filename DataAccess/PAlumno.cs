@@ -132,5 +132,30 @@ namespace DataAccess
 
             return alumno;
         }
+
+        public int getCountAlumnos(string connString)
+        {
+            int cantidad = 0;
+            try
+            {
+
+                SqlConnection context = new SqlConnection(connString);
+                using (context)
+                {
+                    context.Open();
+
+                    SqlCommand cm = new SqlCommand();
+                    cm.Connection = context;
+                    cm.CommandText = "Select count(*) from Alumno";
+                    cantidad = int.Parse(cm.ExecuteScalar().ToString());                   
+                }
+            }
+            catch (Exception ex)
+            {
+                return cantidad;
+            }
+
+            return cantidad;
+        }
     }
 }

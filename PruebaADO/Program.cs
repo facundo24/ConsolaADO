@@ -16,12 +16,12 @@ namespace PruebaADO
             string connection = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             HAlumno ha = new HAlumno();
 
-            Alumno al = new Alumno("Pepe2", "Loco2", "0001000", 99);
+            Alumno al = new Alumno("Pepe3", "Loco2", "1001000", 99);
             ha.InsertAlumno(al, connection);
 
             List<Alumno> colAlumnos = ha.GetAlumnos(connection);
 
-            Alumno unAlumno = ha.GetAlumnoByDocument(connection, "00000000");
+            int count = ha.GetCountAlumnos(connection);
 
 
         }

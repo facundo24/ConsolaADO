@@ -81,8 +81,8 @@ namespace DataAccess
                     {
                         while (re.Read())
                         {
-                            Alumno al = new Alumno(re.GetInt32(0), re.GetString(1), re.GetString(2), re.GetString(3), re.GetInt16(4));                                                     
-                            
+                            Alumno al = new Alumno(re.GetInt32(0), re.GetString(1), re.GetString(2), re.GetString(3), re.GetInt16(4));
+
                             colAlumnos.Add(al);
 
                         }
@@ -98,6 +98,68 @@ namespace DataAccess
             return colAlumnos;
         }
 
+        public List<Alumno> GetAlumnosDesconectado(string connString)
+        {
+            DataTable dt = null;
+            SqlDataAdapter da = null;
+            SqlCommandBuilder cb = null;
+            DataSet ds = new DataSet();
+            List<Alumno> colAlumnos = new List<Alumno>();
+            try
+            {
+
+                SqlConnection context = new SqlConnection(connString);
+                using (context)
+                {
+                    context.Open();
+
+                    SqlCommand cm = new SqlCommand();
+                    cm.Connection = context;
+                    cm.CommandText = "Select idAlumno, nombre, apellido, documento, edad from Alumno";
+
+                    da = new SqlDataAdapter(cm);
+                    cb = new SqlCommandBuilder(da);
+
+                    da.Fill(ds, "Alumno");
+                    context.Close();
+
+
+                    dt = ds.Tables["Alumno"];
+
+        
+                    for (int i = dt.Rows.Count - 1; i >= 0; i--)
+                    {
+                        dt.Rows[i].Delete();
+                    }
+
+                    /*
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        row.BeginEdit();
+                        row["nombre"] = "LOCO";
+                        row.EndEdit();                        
+                    }*/
+
+                    DataRow row = dt.NewRow();
+                    row["nombre"] = "Pepe45";
+                    row["apellido"] = "Loco45";
+                    row["documento"] = "Doc";
+                    dt.Rows.Add(row);
+
+                    context.Open();
+                    da.Update(ds, "Alumno");
+                   
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+            return colAlumnos;
+        }
+
+
         public Alumno GetAlumnoByDocument(string connString, string documento)
         {
             Alumno alumno = null;
@@ -112,7 +174,7 @@ namespace DataAccess
                     SqlCommand cm = new SqlCommand();
                     cm.Connection = context;
                     cm.CommandText = "Select idAlumno, nombre, apellido, documento, edad from Alumno where documento = @doc";
- 
+
                     cm.Parameters.Add("@doc", SqlDbType.VarChar).Value = documento;
 
                     SqlDataReader re = cm.ExecuteReader(CommandBehavior.SingleRow);
@@ -147,7 +209,7 @@ namespace DataAccess
                     SqlCommand cm = new SqlCommand();
                     cm.Connection = context;
                     cm.CommandText = "Select count(*) from Alumno";
-                    cantidad = int.Parse(cm.ExecuteScalar().ToString());                   
+                    cantidad = int.Parse(cm.ExecuteScalar().ToString());
                 }
             }
             catch (Exception ex)
@@ -178,7 +240,7 @@ namespace DataAccess
                     cm.Parameters.Add("@edad", SqlDbType.SmallInt).Value = alumno.Edad;
                     cm.Parameters.Add("@doc", SqlDbType.VarChar).Value = alumno.Documento;
 
-                    rowAfect = cm.ExecuteNonQuery();                  
+                    rowAfect = cm.ExecuteNonQuery();
 
                 }
             }

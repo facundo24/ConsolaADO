@@ -19,7 +19,7 @@ namespace BusinessLogic.Helper
         public List<Alumno> GetAlumnos(string connString)
         {
             PAlumno pa = new PAlumno();
-            return pa.GetAlumnos(connString);
+            return pa.GetAlumnosDesconectado(connString);
         }
 
         public Alumno GetAlumnoByDocument(string connString, string documento)
